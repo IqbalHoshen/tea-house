@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea house</title>
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- family size Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- customizing -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#1C1C1C',
+                        'secondary-color': '#777',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- banner -->
+        <div class="hero pt-16 mb-28">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-[80px] font-extrabold leading-[100px] text-primary-color">It's good <br>tea time at
+                        The <br>Tea House
+                    </h1>
+
+                    <p class="text-lg text-secondary-color font-medium py-6">Tea and Botanical Solutions Supplier Give
+                        Optimum Satisfaction To
+                        Your Taste Buds.</p>
+
+                    <button
+                        class="btn text-xl text-white font-bold bg-gradient-to-r from-[#FF8938] to-[#F00] h-16 px-5">Explore
+                        More <img src="images/arrow.png" alt=""></button>
+
+                </div>
+
+                <div class="relative">
+                    <img src="images/banner.png" />
+
+                    <div
+                        class="absolute left-16 bottom-1 flex gap-4 bg-white rounded-xl drop-shadow-md justify-center p-5">
+                        <img src="images/Group 5.svg" alt="">
+                        <div>
+                            <h3 class="text-primary-color text-3xl font-extrabold">5.00</h3>
+                            <p class="text-base font-semibold text-secondary-color">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <section>
+            <h3 class=" text-primary-color text-[45px] font-extrabold text-center">Our Featured Products</h3>
+            <p class="text-secondary-color text-base font-medium text-center leading-7">There are many variations of
+                passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br> by
+                injected humour, or randomised words which don't look even slightly believable. </p>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
